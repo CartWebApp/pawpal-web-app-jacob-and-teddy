@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/desktop version/signin.html"
+    "livePreview.defaultPreviewPath": "/desktop version/signin.html",
+    "liveServer.settings.port": 5501
 }
