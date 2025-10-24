@@ -1,0 +1,22 @@
+header {
+    background-color: #BEFD73;
+    width: 100%;
+    margin: 0%;
+    padding:5px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+     
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px;
+    border: 1px solid red;
+}
+li > a {
+    text-decoration: none;
+    color: black;
+}
