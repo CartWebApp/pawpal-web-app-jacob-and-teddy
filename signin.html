@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal - Sign In</title>
+    <link rel="stylesheet" href="signin.css">
 </head>
 <body>
     <!-- Put the navbar here once it's perfected on the main page. -->
      <!-- content -->
       <main class="signin">
         <h1>Sign In</h1>
-        <p>Greetings Customer, (greetings to convinces why a customer should use our app with benefits and easy access.)</p>
-        <form action="submit_signin" method="post">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+        <form action="general.html" method="post">
+            <input type="text" id="email" name="email" placeholder="Email"  required><br><br>
+            <input type="password" id="password" placeholder="Password" name="password" required><br><br>
             <button type="submit" formnovalidate formaction="general.html">Sign In</button>
         </form>
          <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-        <img src="images/Ace.jpg" alt="German Shepard">
+        <br><img src="/images/dogstare.jpg" alt="German Shepard">
       </main>
+      
 </body>
 </html>
