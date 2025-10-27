@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal - Activities</title>
-</head>
+    <link rel="stylesheet" href="activities.css">
+    </head>
 <body>
+   <!-- nav bar here  -->
+   <header>
+    <nav>
+      <ul>
+        <li><a href="general.html"><img src="/images/paw.png" alt="paw print logo"></a></li>
+        <li><a class="green" href="activities.html">Activites</a><li>
+        <li><a class="green" href="health.html">Health/Medication</a><li>
+        <li><a class="green" href="alarms.html">Alarms</a><li>
+        <li><a href="profile.html"><img src="/images/Default PFP.jpg" alt="profile picture"></a><li>
+      </ul>
+    </nav>
+  </header>
+    <!-- dog select also here  -->
+    <section class="Walks">
+    <h2>Walks</h2>
+    <h3>Log a New Walk:</h3>
+    <form>
+        <input type="date" id="walkdate" name="walkdate">
+        <input type="time" id="walktime" name="walktime">
+        <input type="number" id="walkduration" name="walkduration" placeholder="Distance (miles)">
+        <button type="submit">Add Walk</button> </form>
+    <h3>Past Walks:</h3>
+    <!-- when everything else is done, figure out bar graphs -->
+    </section>
+
+    <section class="Sleep">
+    <h2>Sleep</h2>
+    <h3>Log New Sleep Session:</h3>
+    <form>
+        <input type="date" id="sleepdate" name="sleepdate">
+        <input type="number" id="sleepduration" name="sleepduration" placeholder="Duration (hours)">
+        <button type="submit">Add Sleep Session</button>
+    </form>
+    <h3>Sleep History:</h3>
+    <!-- chart please -->
+    
+    </section>
+
+    <section class="Weight">
+    <h2>Weight</h2>
+    <h3>Log New Weight Entry:</h3>
+    <form>
+        <input type="date" id="weightdate" name="weightdate">
+        <input type="number" id="weightvalue" name="weightvalue" placeholder="Weight (lbs)">
+        <button type="submit">Add Weight Entry</button>
+    </form>
+    <h3>Weight History Chart:</h3>
+    <!-- chart please -->
+    </section>
     
 </body>
 </html>

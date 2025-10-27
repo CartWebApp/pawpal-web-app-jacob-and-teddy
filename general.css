@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
 }
 a.statbutton {
     text-decoration: none;
@@ -9,6 +9,9 @@ a.statbutton {
     padding: 15px;
     border-radius: 30px;
 }
+
+
+/* select stuff */
 div.dogselection {
     display: flex;
     justify-content: space-between;
@@ -31,16 +34,42 @@ img[alt="Drop down icon to choose a dog"] {
     height: 100px;
     justify-self: flex-end;
 }
-img[alt="PFP of dog"] {
+
+/* navbar stuff */
+nav {
+    background-color: #BEFD73;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+nav > ul {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+}
+li {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+}
+a.green {
+    background-color: #2ECC71;
+}
+a > img {
     width: 100px;
     height: 100px;
-    justify-self: flex-end;
-    border-radius: 100%;
+    /* border-radius:  50%; */
+    background-color: none;
 }
-section.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    justify-self: flex-end;
+img[alt="profile picture"] {
+    width: 100px;
+    height: 100px;
+    border-radius:  50%;
+    background-color: none;
 }
+

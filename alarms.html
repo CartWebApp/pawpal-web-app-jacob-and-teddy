@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal - Alarms</title>
+    <link rel="stylesheet" href="alarms.css">
 </head>
 <body>
-    
+    <!-- add nav bar -->
+    <header>
+        <nav>
+          <ul>
+            <li><a href="general.html"><img src="/images/paw.png" alt="paw print logo"></a></li>
+            <li><a class="green" href="activities.html">Activites</a><li>
+            <li><a class="green" href="health.html">Health/Medication</a><li>
+            <li><a class="green" href="alarms.html">Alarms</a><li>
+            <li><a href="profile.html"><img src="/images/Default PFP.jpg" alt="profile picture"></a><li>
+          </ul>
+        </nav>
+      </header>
+     <!-- add the dropdown dog selector once its done  -->
+    <section class="createalarm">
+        Create New Alarm:
+        <form>
+            <input type="text" placeholder="Alarm Description">
+            <input type="time" placeholder="Set Time">
+            <button type="submit">Add Alarm</button>
+        </form>
+    </section>
+    <section class="alarms">
+    <h2>Current Alarms:</h2>
+    <ul>
+        <li>Alarm 1: Description and Time</li>
+        <li>Alarm 2: Description and Time</li>
+        <li>Alarm 3: Description and Time</li>
+        <li>Alarm 4: Description and Time</li>
+    </ul>
+    </section>
 </body>
 </html>
