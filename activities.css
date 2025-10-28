@@ -40,12 +40,12 @@ body {
     text-align: center;
 }
 
-/* bar graph */
+/* bar graph
   .chart-container {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
-    height: 200px;
+    height: 300px;
     width: 600px;
     margin: 0 auto;
     background: white;
@@ -69,4 +69,4 @@ body {
     margin-top: 5px;
     text-align: center;
     color: #333;
-  }
+  } */

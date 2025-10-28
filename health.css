@@ -35,3 +35,38 @@ img[alt="profile picture"] {
     border-radius:  50%;
     background-color: none;
 }
+content.conditions {
+    text-align: center;
+    margin: 20px;
+    background-color: gray;
+}
+.conditions ul li {
+    font-size: 20px;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    width: 30%;
+    justify-self: center;
+}
+div.insert {
+    margin: 20px;
+    background-color: #96E6B8;
+    padding: 20px;
+    width: 65%;
+    justify-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div.insert input {
+    flex-basis: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+div.insert button {
+    background-color: #2DCC70;
+    flex-basis:79%;
+    height: 40px;
+    border-radius: 60px;
+    border: none;
+}
