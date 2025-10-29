@@ -6,15 +6,21 @@ main {
     border-radius: 10px;
     align-self: center;
     justify-self: center;
-    margin-top:25%;
+    margin-top: 25%;
 }
 input {
     width:80%;
     padding: 10px;
 }
-button {
+a[href="general.html"] {
     width: 45%;
     height: 40px;
+    text-decoration: none;
     background-color: #9A59B5;
+    color:black;
     border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:40px;
+    padding-right:40px;
 }
