@@ -72,4 +72,56 @@ img[alt="profile picture"] {
     border-radius:  50%;
     background-color: none;
 }
+/* combines alarm and appointment on the same area */
+div.wonderhoy {
+    display: flex;
+}
+/* alarm */
+.alarms {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alarmitem:nth-child(odd) {
+    background-color: #F1C40F;
+    width:40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
 
+.alarmitem:nth-child(even) {
+    background-color: #F39C12;
+    width:40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+/* appointment */
+.appointments {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.appointmentitem:nth-child(odd) {
+    background-color: #C783E2;
+    width:40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.appointmentitem:nth-child(even) {
+    background-color: #3498DB;
+    width:40%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}

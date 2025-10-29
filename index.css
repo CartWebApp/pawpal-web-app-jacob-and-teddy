@@ -58,3 +58,49 @@ img[alt="profile picture"] {
     border-radius:  50%;
     background-color: none;
 }
+
+main {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-content: center;
+    background-color: #C683E2;
+    padding: 20px;
+    margin-top: 75px;
+}
+
+div.heroinfo {
+    /* border: #2ECC71 5px solid; */
+    flex-basis:50%;
+    align-self:center;
+    
+}
+div.heroinfo h1 {
+    text-align: center;
+    font-size: 50px;
+}
+div.heroinfo a {
+    display: block;
+    background-color: aliceblue;
+    width: 30%;
+    text-align: center;
+    justify-self: center;
+    align-self:flex-end;
+    border-radius: 30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+div.heroinfo p {
+    text-align: center;
+    font-size: 20px;
+}
+img.heroimage {
+    flex-basis:30%;
+    flex-shrink: 1;
+    height: fit-content;
+    flex-grow:1;
+    padding: 20px;
+    
+}
