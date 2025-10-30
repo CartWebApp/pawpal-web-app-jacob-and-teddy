@@ -36,13 +36,16 @@
      </div>
     </content>
 
-    <content class="weight">
+
+        <!-- weight info -->
+    <div class="weight">
         <div class="enterweight">
             <input type="number" id="weight" name="weight" placeholder="Enter Weight (lbs)">
             <button type="submit">Update Weight</button>
         </div>
-        <h2>Current Weight: __ lbs</h2>
-        <h3>Weight History:</h3>
+        <h3>Current Weight: __ lbs</h3>
+        <h2>Weight History:</h2>
+        <!-- table time -->
         <table>
             <tr>
                 <th>Date</th>
@@ -61,8 +64,12 @@
                 <td>__ lbs</td>
             </tr>
         </table>
-    </content>
+    </div>
     <content class="medication">
+        <form class="medication">
+            <input type="text" id="medtype" name="medtype" placeholder="Enter New Medication">
+            <input type="text" id="justify" name="Description" placeholder="Instructions">
+        </form>
         <h2>Medication:</h2>
         <table>
             <tr>
@@ -83,6 +90,6 @@
             </tr>
         </table>
     </content>
-    <a class="home">Return Home</a>
+    <a class="home" href="general.html">Return Home</a>
 </body>
 </html>

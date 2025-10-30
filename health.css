@@ -35,6 +35,8 @@ img[alt="profile picture"] {
     border-radius:  50%;
     background-color: none;
 }
+
+/* condition list */
 content.conditions {
     text-align: center;
     margin: 20px;
@@ -70,3 +72,50 @@ div.insert button {
     border-radius: 60px;
     border: none;
 }
+
+/* weight info */
+div.weight {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid blue;
+    height: fit-content;
+}
+div.enterweight {
+    background-color: #F39C11;
+    width:fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.enterweight input {
+    flex-basis: 75%;
+    padding: 2px;
+    height: 25px;
+    margin: 5px;
+}
+div.enterweight button {
+    flex-basis: 40%;
+    color: white;
+    background-color: #2DCC70;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+table {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+tr,th,td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+/* med info */
