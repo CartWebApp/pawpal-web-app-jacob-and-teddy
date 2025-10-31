@@ -12,10 +12,10 @@
         <nav>
           <ul>
             <li><a href="general.html"><img src="/images/paw.png" alt="paw print logo"></a></li>
-            <li><a class="green" href="activities.html">Activites</a><li>
-            <li><a class="green" href="health.html">Health/Medication</a><li>
-            <li><a class="green" href="alarms.html">Alarms</a><li>
-            <li><a href="profile.html"><img src="/images/Default PFP.jpg" alt="profile picture"></a><li>
+            <li><a class="green" href="activities.html">Activites</a></li>
+            <li><a class="green" href="health.html">Health/Medication</a></li>
+            <li><a class="green" href="alarms.html">Alarms</a></li>
+            <li><a href="profile.html"><img src="/images/Default PFP.jpg" alt="profile picture"></a></li>
           </ul>
         </nav>
       </header>
@@ -24,15 +24,15 @@
     <!-- content  -->
      <content class="conditions">
         <h1>Medical Conditions:</h1>
-        <ul>
-            <li>Condition 1</li>
-            <li>Condition 2</li>
-            <li>Condition 3</li>
+        <ul id="conditionsList">
+            <li>Condition 1 <button onclick="removeCondition(this)">Remove</button></li>
+            <li>Condition 2 <button onclick="removeCondition(this)">Remove</button></li>
+            <li>Condition 3 <button onclick="removeCondition(this)">Remove</button></li>
         </ul>
      
      <div class="insert">
         <input type="text" id="newcondition" name="newcondition" placeholder="Add New Condition">
-        <button type="submit">Add Condition</button>
+        <button type="button" onclick="addCondition()">Add Condition</button>
      </div>
     </content>
 
@@ -40,56 +40,68 @@
         <!-- weight info -->
     <div class="weight">
         <div class="enterweight">
-            <input type="number" id="weight" name="weight" placeholder="Enter Weight (lbs)">
-            <button type="submit">Update Weight</button>
+            <input type="date" id="weightDate" name="weightDate">
+            <input type="number" id="weight" name="weight" placeholder="Enter Weight (lbs)" step="0.1">
+            <button type="button" onclick="addWeight()">Update Weight</button>
         </div>
-        <h3>Current Weight: __ lbs</h3>
+        <h3>Current Weight: <span id="currentWeight">--</span> lbs</h3>
         <h2>Weight History:</h2>
         <!-- table time -->
-        <table>
-            <tr>
-                <th>Date</th>
-                <th>Weight (lbs)</th>
-            </tr>
-            <tr>
-                <td>MM/DD/YYYY</td>
-                <td>__ lbs</td>
-            </tr>
-            <tr>
-                <td>MM/DD/YYYY</td>
-                <td>__ lbs</td>
-            </tr>
-            <tr>
-                <td>MM/DD/YYYY</td>
-                <td>__ lbs</td>
-            </tr>
+        <table id="weightTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Weight (lbs)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="weightTableBody">
+                <tr class="no-data">
+                    <td colspan="3">No weight entries yet</td>
+                </tr>
+            </tbody>
         </table>
     </div>
     <content class="medication">
-        <form class="medication">
-            <input type="text" id="medtype" name="medtype" placeholder="Enter New Medication">
-            <input type="text" id="justify" name="Description" placeholder="Instructions">
+        <h2>Add Medication:</h2>
+        <form class="medication" id="medicationForm">
+            <input type="text" id="medtype" name="medtype" placeholder="Enter New Medication" required>
+            <input type="text" id="justify" name="Description" placeholder="Instructions" required>
+            <button type="submit">Add Medication</button>
         </form>
         <h2>Medication:</h2>
-        <table>
-            <tr>
-                <th>Medication Name</th>
-                <th>Instructions</th>
-            </tr>
-            <tr>
-                <td>Medication 1</td>
-                <td>__ mg</td>
-            </tr>
-            <tr>
-                <td>Medication 2</td>
-                <td>__ mg</td>
-            </tr>
-            <tr>
-                <td>Medication 3</td>
-                <td>__ mg</td>
-            </tr>
+        <table id="medicationTable">
+            <thead>
+                <tr>
+                    <th>Medication Name</th>
+                    <th>Instructions</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="medicationTableBody">
+                <tr>
+                    <td>Medication 1</td>
+                    <td>__ mg</td>
+                    <td><button onclick="deleteMedication(this)">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Medication 2</td>
+                    <td>__ mg</td>
+                    <td><button onclick="deleteMedication(this)">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Medication 3</td>
+                    <td>__ mg</td>
+                    <td><button onclick= "deleteMedication(this)">Remove</button></td>
+                </tr>
+            </tbody>
         </table>
     </content>
+    
     <a class="home" href="general.html">Return Home</a>
+
+    <script src="health.js"></script>
 </body>
+
+
 </html>

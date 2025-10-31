@@ -35,3 +35,9 @@ img[alt="profile picture"] {
     border-radius:  50%;
     background-color: none;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   

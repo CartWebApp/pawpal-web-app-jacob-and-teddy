@@ -40,12 +40,12 @@ img[alt="profile picture"] {
 content.conditions {
     text-align: center;
     margin: 20px;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 .conditions ul li {
     font-size: 20px;
-    border-top: black 1px solid;
-    border-bottom: black 1px solid;
+    border-top: rgb(255, 255, 255) 1px solid;
+    border-bottom: rgb(255, 255, 255) 1px solid;
     width: 30%;
     justify-self: center;
 }
@@ -117,5 +117,28 @@ tr,th,td {
     border: 1px solid;
     padding: 5px;
 }
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weight {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 
+
+}
 /* med info */
+.medication {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: space-between;
+    
+}

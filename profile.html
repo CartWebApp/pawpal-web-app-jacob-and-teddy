@@ -5,8 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PawPal - Profile</title>
     <link rel="stylesheet" href="profile.css">
+    <header>
+    <nav>
+      <ul>
+        <li><a href="general.html"><img src="/images/paw.png" alt="paw print logo"></a></li>
+        <li><a class="green" href="activities.html">Activites</a></li>
+        <li><a class="green" href="health.html">Health/Medication</a></li>
+        <li><a class="green" href="alarms.html">Alarms</a></li>
+        <li><a href="profile.html"><img src="/images/Default PFP.jpg" alt="profile picture"></a></li>
+      </ul>
+    </nav>
+  </header>
 </head>
 <body>
-    
-</body>
+<section class="profile-section">
+  <h1>Your Profile</h1>
+  <div class="profile-info">
+    <img src="/images/Default PFP.jpg" alt="Profile Picture" class="profile-picture" />
+
+    <div class="details">
+      <label>
+        <strong>Name:</strong>
+        <input type="text" id="profile-name" name="profile-name" placeholder="Enter your name" required />
+      </label>
+
+      <label>
+        <strong>Email:</strong>
+        <input type="email" id="profile-email" name="profile-email" placeholder="Enter your email" required />
+      </label>
+
+      <label>
+        <strong>Phone Number:</strong>
+        <input type="phone-number" id="profile-phone-number" name="enter your Phone number(optional)"  />
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="edit-profile-button">Edit Profile</button>
+</section>
+
 </html>
