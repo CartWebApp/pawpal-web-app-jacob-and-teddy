@@ -36,7 +36,7 @@
      </div>
     </content>
 
-
+<div class="organize1">
         <!-- weight info -->
     <div class="weight">
         <div class="enterweight">
@@ -63,8 +63,7 @@
         </table>
     </div>
     <content class="medication">
-        <h2>Add Medication:</h2>
-        <form class="medication" id="medicationForm">
+        <form class="typemedication" id="medicationForm">
             <input type="text" id="medtype" name="medtype" placeholder="Enter New Medication" required>
             <input type="text" id="justify" name="Description" placeholder="Instructions" required>
             <button type="submit">Add Medication</button>
@@ -81,24 +80,25 @@
             <tbody id="medicationTableBody">
                 <tr>
                     <td>Medication 1</td>
-                    <td>__ mg</td>
+                    <td>2 mg daily</td>
                     <td><button onclick="deleteMedication(this)">Remove</button></td>
                 </tr>
                 <tr>
                     <td>Medication 2</td>
-                    <td>__ mg</td>
+                    <td>5 mg weekly</td>
                     <td><button onclick="deleteMedication(this)">Remove</button></td>
                 </tr>
                 <tr>
                     <td>Medication 3</td>
-                    <td>__ mg</td>
+                    <td>5 mg whenever</td>
                     <td><button onclick= "deleteMedication(this)">Remove</button></td>
                 </tr>
             </tbody>
         </table>
     </content>
+</div>
     
-    <a class="home" href="general.html">Return Home</a>
+    <!-- <a class="home" href="general.html">Return Home</a> -->
 
     <script src="health.js"></script>
 </body>

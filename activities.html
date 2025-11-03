@@ -22,40 +22,40 @@
     <!-- dog select also here  -->
     
     <section class="Walks">
-        <h2>Walks</h2>
+        <div class="wantry"><h2>Walks</h2>
         <h3>Log a New Walk:</h3>
         <form id="walkForm">
             <input type="date" id="walkdate" name="walkdate" required>
             <input type="time" id="walktime" name="walktime" required>
             <input type="number" id="walkduration" name="walkduration" placeholder="Distance (miles)" step="0.1" required>
             <button type="submit">Add Walk</button>
-        </form>
+        </form></div>
         
         <h3>Past Walks:</h3>
         <canvas id="walkChart"></canvas>
     </section>
 
     <section class="Sleep">
-        <h2>Sleep</h2>
+        <div class="sentry"><h2>Sleep</h2>
         <h3>Log New Sleep Session:</h3>
         <form id="sleepForm">
             <input type="date" id="sleepdate" name="sleepdate" required>
             <input type="number" id="sleepduration" name="sleepduration" placeholder="Duration (hours)" step="0.5" required>
             <button type="submit">Add Sleep Session</button>
-        </form>
+        </form></div>
         
         <h3>Sleep History:</h3>
         <canvas id="sleepChart"></canvas>
     </section>
 
     <section class="Weight">
-        <h2>Weight</h2>
+        <div class="wentry"><h2>Weight</h2>
         <h3>Log New Weight Entry:</h3>
         <form id="weightForm">
             <input type="date" id="weightdate" name="weightdate" required>
             <input type="number" id="weightvalue" name="weightvalue" placeholder="Weight (lbs)" step="0.1" required>
             <button type="submit">Add Weight Entry</button>
-        </form>
+        </form></div>
         
         <h3>Weight History Chart:</h3>
         <canvas id="weightChart"></canvas>

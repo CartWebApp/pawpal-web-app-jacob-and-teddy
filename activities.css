@@ -40,33 +40,58 @@ body {
     text-align: center;
 }
 
-/* bar graph
-  .chart-container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 300px;
-    width: 600px;
-    margin: 0 auto;
-    background: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-  }
-  
-  .bar {
-    width: 50px;
-    background: steelblue;
-    text-align: center;
+.sentry {
+  background-color: #8D44AD;
+  padding: 10px;
+  border-radius: 10px;
+}
+.wantry {
+  background-color: #2DCC70;
+  padding: 10px;
+  border-radius: 10px;
+}
+.wentry {
+  background-color: #F39C11;
+  padding: 10px;
+  border-radius: 10px;
+}
+input {
+  height: 20px;
+}
+button {
+    border: none;
+    background-color: #2DCC70;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
     color: white;
-    border-radius: 5px 5px 0 0;
+}
+.wantry button {
+  background-color: #8D44AD;
+}
+@media screen and (max-width: 600px) {
+  nav {
+      width: 100vw;
   }
-  
-  .bar:hover {
-    background: dodgerblue;
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .label {
-    margin-top: 5px;
-    text-align: center;
-    color: #333;
-  } */
+  li {
+      padding: 1%;
+      margin: 5%
+  }
+  a {
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+  }
+  nav img {
+      width: 15%;
+      height: auto;
+  }
+  img[alt="profile picture"] {
+      width: 15%;
+      height: auto;
+  }}

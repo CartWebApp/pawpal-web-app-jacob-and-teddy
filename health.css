@@ -40,14 +40,23 @@ img[alt="profile picture"] {
 content.conditions {
     text-align: center;
     margin: 20px;
-    background-color: rgb(255, 255, 255);
+    text-align: center;
 }
 .conditions ul li {
     font-size: 20px;
-    border-top: rgb(255, 255, 255) 1px solid;
-    border-bottom: rgb(255, 255, 255) 1px solid;
-    width: 30%;
     justify-self: center;
+}
+.conditions h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.conditions button {
+    border: none;
+    background-color: #2DCC70;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
 }
 div.insert {
     margin: 20px;
@@ -81,7 +90,6 @@ div.weight {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid blue;
     height: fit-content;
 }
 div.enterweight {
@@ -131,6 +139,7 @@ tr,th,td {
 
 
 }
+
 /* med info */
 .medication {
     width: 45%;
@@ -140,5 +149,76 @@ tr,th,td {
     align-items: center;
     text-align: center;
     height: space-between;
-    
+}
+.typemedication {
+    background-color: #C683E2;
+    width:90%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.typemedication input {
+    width: 80%;
+    padding: 2px;
+    height: 25px;
+    margin: 5px;
+}
+form.typemedication button {
+    flex-basis: 40%;
+    color: white;
+    background-color: #2DCC70;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+.organize1 {
+    display:flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100vw;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        padding: 1%;
+        margin: 5%
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    nav img {
+        width: 15%;
+        height: auto;
+    }
+    img[alt="profile picture"] {
+        width: 15%;
+        height: auto;
+    }
+    .weight {
+        flex-basis:90%;
+        margin: 15px;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+    }
+    .medication {
+        width: 90%;
+        margin: 15px;
+    }
+    div.organize1 {
+        flex-wrap:wrap;
+        padding: 10px;
+    }
 }
